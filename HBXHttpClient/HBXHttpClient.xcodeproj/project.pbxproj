@@ -30,6 +30,13 @@
 		815DB6161CF7053300151E3D /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB6031CF7053300151E3D /* UIProgressView+AFNetworking.m */; };
 		815DB6171CF7053300151E3D /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB6051CF7053300151E3D /* UIRefreshControl+AFNetworking.m */; };
 		815DB6181CF7053300151E3D /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB6071CF7053300151E3D /* UIWebView+AFNetworking.m */; };
+		815DB61A1CF7071A00151E3D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815DB6191CF7071A00151E3D /* CFNetwork.framework */; };
+		815DB61C1CF7080200151E3D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815DB61B1CF7080200151E3D /* Security.framework */; };
+		815DB61E1CF7081F00151E3D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815DB61D1CF7081F00151E3D /* SystemConfiguration.framework */; };
+		815DB6201CF7082500151E3D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815DB61F1CF7082500151E3D /* MobileCoreServices.framework */; };
+		815DB6241CF708A900151E3D /* HBXHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB6231CF708A900151E3D /* HBXHttpClient.m */; };
+		815DB6291CF70DB700151E3D /* HBXBaseAsynchionousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB6281CF70DB700151E3D /* HBXBaseAsynchionousOperation.m */; };
+		815DB62C1CF7113300151E3D /* HBXHttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB62B1CF7113300151E3D /* HBXHttpOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +85,17 @@
 		815DB6051CF7053300151E3D /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		815DB6061CF7053300151E3D /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		815DB6071CF7053300151E3D /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		815DB6191CF7071A00151E3D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		815DB61B1CF7080200151E3D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		815DB61D1CF7081F00151E3D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		815DB61F1CF7082500151E3D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		815DB6221CF708A900151E3D /* HBXHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXHttpClient.h; sourceTree = "<group>"; };
+		815DB6231CF708A900151E3D /* HBXHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXHttpClient.m; sourceTree = "<group>"; };
+		815DB6251CF7090F00151E3D /* HBXHTTPClientDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXHTTPClientDefine.h; sourceTree = "<group>"; };
+		815DB6271CF70DB700151E3D /* HBXBaseAsynchionousOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXBaseAsynchionousOperation.h; sourceTree = "<group>"; };
+		815DB6281CF70DB700151E3D /* HBXBaseAsynchionousOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXBaseAsynchionousOperation.m; sourceTree = "<group>"; };
+		815DB62A1CF7113300151E3D /* HBXHttpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXHttpOperation.h; sourceTree = "<group>"; };
+		815DB62B1CF7113300151E3D /* HBXHttpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXHttpOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +103,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815DB6201CF7082500151E3D /* MobileCoreServices.framework in Frameworks */,
+				815DB61E1CF7081F00151E3D /* SystemConfiguration.framework in Frameworks */,
+				815DB61C1CF7080200151E3D /* Security.framework in Frameworks */,
+				815DB61A1CF7071A00151E3D /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +116,10 @@
 		815DB5BF1CF7049000151E3D = {
 			isa = PBXGroup;
 			children = (
+				815DB61F1CF7082500151E3D /* MobileCoreServices.framework */,
+				815DB61D1CF7081F00151E3D /* SystemConfiguration.framework */,
+				815DB61B1CF7080200151E3D /* Security.framework */,
+				815DB6191CF7071A00151E3D /* CFNetwork.framework */,
 				815DB5CA1CF7049000151E3D /* HBXHttpClient */,
 				815DB5C91CF7049000151E3D /* Products */,
 			);
@@ -110,6 +136,7 @@
 		815DB5CA1CF7049000151E3D /* HBXHttpClient */ = {
 			isa = PBXGroup;
 			children = (
+				815DB6211CF7088C00151E3D /* HBXClient */,
 				815DB5E21CF7053300151E3D /* AFNetworking */,
 				815DB5CE1CF7049000151E3D /* AppDelegate.h */,
 				815DB5CF1CF7049000151E3D /* AppDelegate.m */,
@@ -188,6 +215,28 @@
 				815DB6071CF7053300151E3D /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		815DB6211CF7088C00151E3D /* HBXClient */ = {
+			isa = PBXGroup;
+			children = (
+				815DB6261CF70D8A00151E3D /* operation */,
+				815DB6221CF708A900151E3D /* HBXHttpClient.h */,
+				815DB6231CF708A900151E3D /* HBXHttpClient.m */,
+				815DB6251CF7090F00151E3D /* HBXHTTPClientDefine.h */,
+			);
+			path = HBXClient;
+			sourceTree = "<group>";
+		};
+		815DB6261CF70D8A00151E3D /* operation */ = {
+			isa = PBXGroup;
+			children = (
+				815DB6271CF70DB700151E3D /* HBXBaseAsynchionousOperation.h */,
+				815DB6281CF70DB700151E3D /* HBXBaseAsynchionousOperation.m */,
+				815DB62A1CF7113300151E3D /* HBXHttpOperation.h */,
+				815DB62B1CF7113300151E3D /* HBXHttpOperation.m */,
+			);
+			path = operation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +320,10 @@
 				815DB60A1CF7053300151E3D /* AFSecurityPolicy.m in Sources */,
 				815DB6161CF7053300151E3D /* UIProgressView+AFNetworking.m in Sources */,
 				815DB60B1CF7053300151E3D /* AFURLRequestSerialization.m in Sources */,
+				815DB62C1CF7113300151E3D /* HBXHttpOperation.m in Sources */,
 				815DB60C1CF7053300151E3D /* AFURLResponseSerialization.m in Sources */,
+				815DB6241CF708A900151E3D /* HBXHttpClient.m in Sources */,
+				815DB6291CF70DB700151E3D /* HBXBaseAsynchionousOperation.m in Sources */,
 				815DB6121CF7053300151E3D /* AFNetworkActivityIndicatorManager.m in Sources */,
 				815DB6151CF7053300151E3D /* UIImageView+AFNetworking.m in Sources */,
 				815DB6141CF7053300151E3D /* UIButton+AFNetworking.m in Sources */,
