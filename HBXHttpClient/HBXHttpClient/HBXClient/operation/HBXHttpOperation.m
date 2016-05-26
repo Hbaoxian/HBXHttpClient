@@ -44,4 +44,13 @@
 
 }
 
+- (void)main {
+    [self.task resume];
+}
+
+- (void)completeOperation {
+    [super completeOperation];
+    self.task = nil;
+}
+
 @end

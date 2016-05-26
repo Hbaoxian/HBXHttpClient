@@ -37,6 +37,7 @@
 		815DB6241CF708A900151E3D /* HBXHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB6231CF708A900151E3D /* HBXHttpClient.m */; };
 		815DB6291CF70DB700151E3D /* HBXBaseAsynchionousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB6281CF70DB700151E3D /* HBXBaseAsynchionousOperation.m */; };
 		815DB62C1CF7113300151E3D /* HBXHttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB62B1CF7113300151E3D /* HBXHttpOperation.m */; };
+		81DCF2C71CF744FF009A63D9 /* HBXAPIRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DCF2C61CF744FF009A63D9 /* HBXAPIRequestOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,8 @@
 		815DB6281CF70DB700151E3D /* HBXBaseAsynchionousOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXBaseAsynchionousOperation.m; sourceTree = "<group>"; };
 		815DB62A1CF7113300151E3D /* HBXHttpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXHttpOperation.h; sourceTree = "<group>"; };
 		815DB62B1CF7113300151E3D /* HBXHttpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXHttpOperation.m; sourceTree = "<group>"; };
+		81DCF2C51CF744FF009A63D9 /* HBXAPIRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXAPIRequestOperation.h; sourceTree = "<group>"; };
+		81DCF2C61CF744FF009A63D9 /* HBXAPIRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXAPIRequestOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +238,8 @@
 				815DB6281CF70DB700151E3D /* HBXBaseAsynchionousOperation.m */,
 				815DB62A1CF7113300151E3D /* HBXHttpOperation.h */,
 				815DB62B1CF7113300151E3D /* HBXHttpOperation.m */,
+				81DCF2C51CF744FF009A63D9 /* HBXAPIRequestOperation.h */,
+				81DCF2C61CF744FF009A63D9 /* HBXAPIRequestOperation.m */,
 			);
 			path = operation;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				815DB60A1CF7053300151E3D /* AFSecurityPolicy.m in Sources */,
 				815DB6161CF7053300151E3D /* UIProgressView+AFNetworking.m in Sources */,
 				815DB60B1CF7053300151E3D /* AFURLRequestSerialization.m in Sources */,
+				81DCF2C71CF744FF009A63D9 /* HBXAPIRequestOperation.m in Sources */,
 				815DB62C1CF7113300151E3D /* HBXHttpOperation.m in Sources */,
 				815DB60C1CF7053300151E3D /* AFURLResponseSerialization.m in Sources */,
 				815DB6241CF708A900151E3D /* HBXHttpClient.m in Sources */,
@@ -480,6 +486,7 @@
 				815DB5E11CF7049000151E3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

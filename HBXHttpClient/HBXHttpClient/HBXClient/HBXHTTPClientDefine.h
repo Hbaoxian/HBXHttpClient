@@ -13,4 +13,7 @@
 
 #define BASE_URL        @"http://api.edaijia.cn"
 
+#define BASE_Code @"code"
+#define BASE_Code_ture 0
+
 #endif /* HBXHTTPClientDefine_h */
