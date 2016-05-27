@@ -26,13 +26,6 @@ static dispatch_queue_t sResponseObjectMappingQueue;
 
 @implementation HBXAPIRequestOperation
 
-+ (void)initialize {
-    if (self == [HBXAPIRequestOperation class]) {
-        sResponseObjectMappingQueue = dispatch_queue_create("com.hbx.cn.object.mapping", 0);
-
-    }
-}
-
 - (instancetype)initWithRequest:(NSURLRequest *)request {
     if (self = [super init]) {
         _request = request;
@@ -47,12 +40,15 @@ static dispatch_queue_t sResponseObjectMappingQueue;
     self.operation = [[HBXHttpOperation alloc] initWithRequest:self.request manager:client Success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull value) {
         if (weakSelf.isActive) {
             [weakSelf onRequestSuccessWithJsonResponse:value];
+            NSLog(@"success value is %@",value);
         }
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         if (weakSelf.isActive) {
             [weakSelf onRequestFailedWithError:error];
+             NSLog(@"failure error is %@",error);
         }
     }];
+    [client.operationQueue addOperation:self.operation];
 }
 
 - (void)stop {

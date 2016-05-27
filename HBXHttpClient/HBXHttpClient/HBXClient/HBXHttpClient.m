@@ -22,7 +22,7 @@ static HBXHttpClient *_httpClient = nil;
 + (HBXHttpClient *)instance {
     @synchronized (self) {
         if (!_httpClient) {
-            _httpClient = [[HBXHttpClient alloc] initWithBaseURL:[NSURL URLWithString:BASE_URL]];
+            _httpClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:BASE_URL]];
         }
     }
      return _httpClient;
