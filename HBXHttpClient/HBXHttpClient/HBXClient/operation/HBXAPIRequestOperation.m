@@ -10,6 +10,7 @@
 #import "HBXHttpOperation.h"
 #import "HBXHttpClient.h"
 #import "HBXHTTPClientDefine.h"
+#import "YYModel.h"
 
 static dispatch_queue_t sResponseObjectMappingQueue;
 
@@ -62,17 +63,32 @@ static dispatch_queue_t sResponseObjectMappingQueue;
     }
 }
 
-
 - (void)onRequestSuccessWithJsonResponse:(nullable id)response {
     if ([self isApiErrorResponse:response]) {
         //发生错误
         return;
     }
+    if (self.classOfResponse) {
+        [self notifiSuccessWithResponse:[self.classOfResponse yy_modelWithDictionary:response]];
+    }else {
+        [self notifiSuccessWithResponse:response];
+    }
     
     
-    
-
 }
+
+- (void)notifiSuccessWithResponse:(id)response {
+    if (self.SuccessBlock && self.isActive) {
+        self.SuccessBlock(response);
+    }
+}
+- (void)notifiFailureWithError:(NSError *)error {
+    if (self.FailureBlock && self.isActive) {
+        self.FailureBlock(error);
+    }
+    
+}
+
 - (void)onRequestFailedWithError:(nullable NSError *)error {
 
 

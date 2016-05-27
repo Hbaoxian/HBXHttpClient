@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81588D9C1CF7E31700EDDEA0 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81588D981CF7E31700EDDEA0 /* NSObject+YYModel.m */; };
+		81588D9D1CF7E31700EDDEA0 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 81588D9A1CF7E31700EDDEA0 /* YYClassInfo.m */; };
+		81588DA01CF7F58100EDDEA0 /* HBXHTTPRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 81588D9F1CF7F58100EDDEA0 /* HBXHTTPRequestFactory.m */; };
 		815DB5CD1CF7049000151E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB5CC1CF7049000151E3D /* main.m */; };
 		815DB5D01CF7049000151E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB5CF1CF7049000151E3D /* AppDelegate.m */; };
 		815DB5D31CF7049000151E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB5D21CF7049000151E3D /* ViewController.m */; };
@@ -41,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81588D971CF7E31700EDDEA0 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		81588D981CF7E31700EDDEA0 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		81588D991CF7E31700EDDEA0 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		81588D9A1CF7E31700EDDEA0 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		81588D9B1CF7E31700EDDEA0 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		81588D9E1CF7F58100EDDEA0 /* HBXHTTPRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXHTTPRequestFactory.h; sourceTree = "<group>"; };
+		81588D9F1CF7F58100EDDEA0 /* HBXHTTPRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXHTTPRequestFactory.m; sourceTree = "<group>"; };
 		815DB5C81CF7049000151E3D /* HBXHttpClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBXHttpClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		815DB5CC1CF7049000151E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		815DB5CE1CF7049000151E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +126,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81588D961CF7E31700EDDEA0 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				81588D971CF7E31700EDDEA0 /* NSObject+YYModel.h */,
+				81588D981CF7E31700EDDEA0 /* NSObject+YYModel.m */,
+				81588D991CF7E31700EDDEA0 /* YYClassInfo.h */,
+				81588D9A1CF7E31700EDDEA0 /* YYClassInfo.m */,
+				81588D9B1CF7E31700EDDEA0 /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
 		815DB5BF1CF7049000151E3D = {
 			isa = PBXGroup;
 			children = (
@@ -223,9 +245,12 @@
 		815DB6211CF7088C00151E3D /* HBXClient */ = {
 			isa = PBXGroup;
 			children = (
+				81588D961CF7E31700EDDEA0 /* YYModel */,
 				815DB6261CF70D8A00151E3D /* operation */,
 				815DB6221CF708A900151E3D /* HBXHttpClient.h */,
 				815DB6231CF708A900151E3D /* HBXHttpClient.m */,
+				81588D9E1CF7F58100EDDEA0 /* HBXHTTPRequestFactory.h */,
+				81588D9F1CF7F58100EDDEA0 /* HBXHTTPRequestFactory.m */,
 				815DB6251CF7090F00151E3D /* HBXHTTPClientDefine.h */,
 			);
 			path = HBXClient;
@@ -318,11 +343,13 @@
 				815DB60D1CF7053300151E3D /* AFURLSessionManager.m in Sources */,
 				815DB5D31CF7049000151E3D /* ViewController.m in Sources */,
 				815DB60F1CF7053300151E3D /* README.md in Sources */,
+				81588D9C1CF7E31700EDDEA0 /* NSObject+YYModel.m in Sources */,
 				815DB5D01CF7049000151E3D /* AppDelegate.m in Sources */,
 				815DB6091CF7053300151E3D /* AFNetworkReachabilityManager.m in Sources */,
 				815DB5CD1CF7049000151E3D /* main.m in Sources */,
 				815DB6131CF7053300151E3D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				815DB60A1CF7053300151E3D /* AFSecurityPolicy.m in Sources */,
+				81588DA01CF7F58100EDDEA0 /* HBXHTTPRequestFactory.m in Sources */,
 				815DB6161CF7053300151E3D /* UIProgressView+AFNetworking.m in Sources */,
 				815DB60B1CF7053300151E3D /* AFURLRequestSerialization.m in Sources */,
 				81DCF2C71CF744FF009A63D9 /* HBXAPIRequestOperation.m in Sources */,
@@ -332,6 +359,7 @@
 				815DB6291CF70DB700151E3D /* HBXBaseAsynchionousOperation.m in Sources */,
 				815DB6121CF7053300151E3D /* AFNetworkActivityIndicatorManager.m in Sources */,
 				815DB6151CF7053300151E3D /* UIImageView+AFNetworking.m in Sources */,
+				81588D9D1CF7E31700EDDEA0 /* YYClassInfo.m in Sources */,
 				815DB6141CF7053300151E3D /* UIButton+AFNetworking.m in Sources */,
 				815DB6171CF7053300151E3D /* UIRefreshControl+AFNetworking.m in Sources */,
 				815DB6181CF7053300151E3D /* UIWebView+AFNetworking.m in Sources */,

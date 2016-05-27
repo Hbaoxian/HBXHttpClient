@@ -39,4 +39,33 @@ static HBXHttpClient *_httpClient = nil;
 }
 
 
+
+
+- (NSMutableURLRequest *)requestWithMethod:(NSString *)method
+                                      path:(NSString *)path
+                                parameters:(NSDictionary *)parameters {
+
+    
+    return [self requestWithMethod:method path:path parameters:parameters timeout:15.f];
+
+}
+- (NSMutableURLRequest *)requestWithMethod:(NSString *)method
+                                      path:(NSString *)path
+                                parameters:(NSDictionary *)parameters
+                                   timeout:(NSTimeInterval)timeout
+{
+    
+    if (parameters) {
+        if ([method isEqualToString:@"GET"] || [method isEqualToString:@"HEAD"] ||
+            [method isEqualToString:@"POST"] || [method isEqualToString:@"DELETE"]) {
+            NSMutableDictionary *mutableParameters = [parameters mutableCopy];
+            parameters = [NSDictionary dictionaryWithDictionary:mutableParameters];
+        }
+    }
+    NSURL *url = [NSURL URLWithString:path relativeToURL:self.baseURL];
+    NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[url absoluteString] parameters:parameters error:nil];
+    return request;
+}
+
+
 @end
